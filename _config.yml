@@ -1,0 +1,21 @@
+## Publication settings
+
+title: "Samizdat"
+description: "A nice web document"
+date_format: "%b %-d, %Y" # for the table of contents
+favicon: "img/favicon.ico"
+
+## Jekyll settings
+
+exclude: [CNAME, README.md, .gitignore]
+permalink: "#:title"
+timezone: null
+lsi: false
+markdown: kramdown
+kramdown:
+  auto_ids: false
+  footnote_backlink: #nope
+plugins:
+  - jekyll-feed
+collections:
+  - pages

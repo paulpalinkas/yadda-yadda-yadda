@@ -1,0 +1,31 @@
+@media print {
+  @page {
+    margin: 2cm;
+  }
+  body {
+    display: block;
+  }
+  body > * {
+    max-width: none;
+  }
+  section {
+    display: block!important;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  img, table, pre, p.caption {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  img {
+    width: auto;
+    padding: 0;
+    max-height: 60vh;
+  }
+  section.page,
+  section#home,
+  footer {
+    display: none;
+  }
+}
